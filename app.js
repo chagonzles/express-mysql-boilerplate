@@ -1,14 +1,14 @@
 const express = require('express');
 const bodyParser = require('body-parser');
-const app = express();
-const port = 3000;
-
 const routes = require('./routes');
+
+const app = express();
 
 app.use(bodyParser.json());
 
 app.use('/users', routes.users);
 
-app.listen(port, () => {
+const PORT = process.env.PORT || 8000;
+app.listen(PORT, () => {
     console.log('express mysql boilerplate')
 })
