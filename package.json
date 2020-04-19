@@ -1,0 +1,24 @@
+{
+  "name": "express-mysql-boilerplate",
+  "version": "1.0.0",
+  "description": "Express MySQL REST API Boilerplate",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/chagonzles/express-mysql-boilerplate.git"
+  },
+  "author": "Charlene Gonzales",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/chagonzles/express-mysql-boilerplate/issues"
+  },
+  "homepage": "https://github.com/chagonzles/express-mysql-boilerplate#readme",
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "express": "^4.17.1",
+    "mysql": "^2.18.1"
+  }
+}
