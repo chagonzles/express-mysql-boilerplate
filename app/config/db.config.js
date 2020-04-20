@@ -1,8 +1,8 @@
 const db = {
-    HOST: "localhost",
-    USERNAME: "root",
-    PASSWORD: "",
-    DB: "test",
+    HOST: process.env.DB_HOST,
+    USERNAME: process.env.DB_USER,
+    PASSWORD: process.env.DB_PASS,
+    DB: process.env.DB_NAME,
     dialect: "mysql",
     pool: {
         max: 5,
