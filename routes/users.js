@@ -1,29 +1,30 @@
 const express = require('express');
+const userController = require('../controllers/user.controller.js');
 const router = express.Router();
 
 // GET users
 router.get('/', (req, res) => {
-    res.send('GET users');
+    userController.findAll(req, res);
 })
 
 // GET specific user
 router.get('/:id', (req, res) => {
-    res.send('GET user ' + req.params.id);
+    userController.findOne(req, res);
 })
 
 // POST user
 router.post('/', (req, res) => {
-    res.json(req.body);
+    userController.create(req, res);
 })
 
 // PUT user
 router.put('/:id', (req, res) => {
-    res.json(req.body);
+    userController.update(req, res);
 })
 
 // DELETE user
 router.delete('/:id', (req, res) => {
-    res.send('DELETE user ' + req.params.id);
+    userController.delete(req, res);
 })
 
 module.exports = router;
