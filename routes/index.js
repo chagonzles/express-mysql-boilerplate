@@ -1,1 +1,1 @@
-exports.users = require('./users.js');
+exports.users = require('./users.route.js');
